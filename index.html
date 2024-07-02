@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="Notes">
+    <link rel="apple-touch-icon" href="rssLogo.png">
+    <meta name="apple-touch-startup-image" content="rssLogo.png">
+    <link rel="shortcut icon" href="rssLogo.png" type="image/x-icon">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#f0f0f0">
+    <title>RSS Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <img src="rssLogoBlack.png" class="logo">
+    
+        <button class="addFeedBtn" id="addFeedBtn" onclick="showAddFeed()">+</button>
+        
+        <div class="addFeed" id="addFeed">
+            <input type="text" id="feed-url" class="feedUrl" placeholder="Enter RSS feed URL">
+            <button onclick="addFeed()">+</button>
+            <h2>Your Feeds:</h2>
+            <ul id="feedList" class="feedList"></ul>
+        </div>
+        <div id="feed-items" class="feedItems"></div>
+
+        <p class="by">Presented By rssReaderApp :)</p>
+    </main>
+
+    <div class="instruction" id="instruction">
+        <br>
+        <h2>A simple rss reader for iOS and ipadOS</h2>
+        <br>
+        <img src="rssLogoBlack.png">
+        <h3>Open in Safari on your iPhone or iPad,
+            <br>click the share button and
+            <br>then "Add to home Screen".
+        </h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

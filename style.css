@@ -1,0 +1,151 @@
+::selection {
+    background-color: #ffffff33;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #010101;
+    color: #FBFBFB;
+}
+
+h1 {
+    text-align: center;
+}
+
+.feedUrl, .feedList {
+    width: 90%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+.feedList {
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.feedList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.feedList li:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.feedItems {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.feedItem {
+    border-bottom: 1px solid #ccc;
+    text-align: auto;
+    padding: 10px 0;
+}
+
+.feedItem h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.feedItem a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.feedItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feedItem p {
+    margin: 5px 0;
+}
+.feed-source {
+    font-weight: bold;
+    color: #555;
+    overflow: hidden;
+}
+
+.addFeed h2 {
+    margin-bottom: 0;
+}
+
+.addFeed button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px auto;
+    font-weight: bold;
+    font-size: 120%;
+    background: #1a1a1a00;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #ffffff;
+}
+
+.addFeedBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+
+    background: #1A1A1A33;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #ffffff;
+
+    font-size: 200%;
+
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    text-align: center;
+}
+
+.addFeed {
+    display: none;
+    position: fixed;
+    background: #000000;
+    padding: 20px 20px;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    
+    display: block;
+}
+
+.by {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.instruction {
+    text-align: center;
+    margin: auto;
+}
+
+.instruction > img {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    height: 300px;
+}
