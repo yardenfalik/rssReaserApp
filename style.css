@@ -17,9 +17,9 @@ h1 {
     text-align: center;
 }
 
-.feedUrl, .feedList {
+.feedUrl {
     width: 95%;
-    padding: 5px 0px;
+    padding: 10px 0px;
     border-radius: 5px;
     border: none;
 }
@@ -27,6 +27,9 @@ h1 {
 .feedList {
     margin: 0;
     list-style: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: none;
 }
 
 .feedList li {
@@ -87,7 +90,7 @@ h1 {
     width: 95%;
     margin-top: 5px;
     border: 2px solid #ffffff;
-    padding: 5px auto;
+    padding: 10px 20px;
    
     font-size: 120%;
     background: #1a1a1a00;
@@ -97,6 +100,7 @@ h1 {
 }
 
 .addFeedBtn {
+    --webkit-appearance: none;
     width: 50px;
     height: 50px;
     border-radius: 50%;
