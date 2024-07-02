@@ -18,7 +18,7 @@ h1 {
 }
 
 .feedUrl, .feedList {
-    width: 90%;
+    width: 95%;
     padding: 5px 0px;
     border-radius: 5px;
     border: none;
@@ -27,7 +27,6 @@ h1 {
 .feedList {
     margin: 0;
     list-style: none;
-    width: 100%;
 }
 
 .feedList li {
@@ -85,9 +84,11 @@ h1 {
 
 .addFeed button {
     border-radius: 5px;
-    border: none;
+    width: 95%;
+    margin-top: 5px;
+    border: 2px solid #ffffff;
     padding: 5px auto;
-    font-weight: bold;
+   
     font-size: 120%;
     background: #1a1a1a00;
     backdrop-filter: blur(5px);

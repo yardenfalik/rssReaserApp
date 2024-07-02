@@ -9,7 +9,6 @@ else
     document.getElementById('main').style.display = 'none';
 }
 
-
 loadFeeds();
 
 function loadFeeds() 
