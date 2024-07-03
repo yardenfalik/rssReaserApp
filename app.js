@@ -10,6 +10,7 @@ else
 }
 
 loadFeeds();
+changeSize();
 
 function loadFeeds() 
 {
@@ -76,6 +77,44 @@ function updateFeedList()
     fetchFeeds();
 }
 
+function changeSize()
+{
+    const slider = document.getElementById('fontSlider');
+
+
+    const fontSizes = [
+        '50%',   
+        '75%',   
+        '100%',  
+        '125%',  
+        '150%'   
+    ];
+
+    function updateFontSize() 
+    {
+            const selectedSize = fontSizes[slider.value - 1];
+            document.body.style.fontSize = selectedSize;
+    }
+
+    slider.addEventListener('input', updateFontSize);
+    updateFontSize();
+}
+
+function infoMenu()
+{
+    if (document.getElementById('infoMenu').style.display == 'block')
+    {
+        document.getElementById('infoMenu').style.display = 'none';
+        document.getElementById('infoBtn').innerHTML = 'Info';
+    }
+    else
+    {
+        document.getElementById('infoMenu').style.display = 'block';
+        document.getElementById('infoBtn').innerHTML = 'Close';
+    }
+
+}
+
 function fetchFeeds() 
 {
     const feedItems = document.getElementById('feed-items');
@@ -119,13 +158,14 @@ function fetchFeeds()
             html += `
                 <div class="feedItem">
                     <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-                    <p>${item.description}</p>
+                    <p id="feedItemText">${item.description}</p>
                     <small>Published: ${item.pubDate.toLocaleString()}</small>
                     <p class="feed-source">${item.feed}</p>
                 </div>
             `;
         });
-
+        
+        document.getElementById('by').style.display = 'none';
         feedItems.innerHTML = html || 'No Updates :)';
     })
     .catch(error => {

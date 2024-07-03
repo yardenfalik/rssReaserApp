@@ -16,8 +16,23 @@
 </head>
 <body>
     <main id="main">
-        <img src="rssLogoBlack.png" class="logo">
-    
+        <button class="logo" onclick="fetchFeeds()"><img src="rssLogoBlack.png"></button>
+        
+        <button class="infoBtn" onclick="infoMenu()">ⓘ</button>
+        <div class="info" id="infoMenu">
+            <p>
+                This is a simple RSS reader for iOS and iPadOS.
+                <br>
+                A minimalistic design to read your favorite feeds.
+                <br>
+                <br>
+                We will only give you 7 stories so you can be stay updates with the latest news without be distracted.
+            </p>
+            <div id="sliderContainer">
+                <h3>Text Size:</h3>
+                <input type="range" id="fontSlider" min="1" max="5" value="3" step="1">
+            </div>
+        </div>
         <button class="addFeedBtn" id="addFeedBtn" onclick="showAddFeed()">+</button>
         
         <div class="addFeed" id="addFeed">
@@ -29,7 +44,7 @@
         </div>
         <div id="feed-items" class="feedItems"></div>
 
-        <p class="by">Presented By rssReaderApp :)</p>
+        <p id="by" class="by">Presented By rssReaderApp :)</p>
     </main>
 
     <div class="instruction" id="instruction">
