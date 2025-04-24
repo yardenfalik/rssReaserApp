@@ -2,15 +2,16 @@ let feeds = [];
 
 if(window.navigator.standalone == true)
 {
-    document.getElementById('instruction').style.display = 'none';
-}
-else
-{
-    document.getElementById('main').style.display = 'none';
+    document.getElementById('pwa-alert').style.display = 'none';
 }
 
 loadFeeds();
 changeSize();
+
+function handleInstallClick()
+{
+    document.getElementById('pwa-alert').style.display = 'none';
+}
 
 function loadFeeds() 
 {
@@ -44,12 +45,12 @@ function showAddFeed()
     if (document.getElementById('addFeed').style.display == 'block')
     {
         document.getElementById('addFeed').style.display = 'none';
-        document.getElementById('addFeedBtn').innerHTML = '+';
+        document.getElementById('addFeedBtn').innerHTML = '<img src="/XIcon.png" alt="+">';
     }
     else
     {
         document.getElementById('addFeed').style.display = 'block';
-        document.getElementById('addFeedBtn').innerHTML = '-';
+        document.getElementById('addFeedBtn').innerHTML = '<img src="/minusIcon.png" style="transform: rotate(180deg);" alt="-">';
     }
 }
 
@@ -105,12 +106,10 @@ function infoMenu()
     if (document.getElementById('infoMenu').style.display == 'block')
     {
         document.getElementById('infoMenu').style.display = 'none';
-        document.getElementById('infoBtn').innerHTML = 'Info';
     }
     else
     {
         document.getElementById('infoMenu').style.display = 'block';
-        document.getElementById('infoBtn').innerHTML = 'Close';
     }
 
 }
