@@ -45,12 +45,12 @@ function showAddFeed()
     if (document.getElementById('addFeed').style.display == 'block')
     {
         document.getElementById('addFeed').style.display = 'none';
-        document.getElementById('addFeedBtn').innerHTML = '<img src="/XIcon.png" alt="+">';
+        document.getElementById('addFeedBtn').innerHTML = '<img src="./XIcon.png" alt="+">';
     }
     else
     {
         document.getElementById('addFeed').style.display = 'block';
-        document.getElementById('addFeedBtn').innerHTML = '<img src="/minusIcon.png" style="transform: rotate(180deg);" alt="-">';
+        document.getElementById('addFeedBtn').innerHTML = '<img src="./minusIcon.png" style="transform: rotate(180deg);" alt="-">';
     }
 }
 
